@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace BFB.Core.FSM
+namespace MonkeyBusiness.Core.FiniteStateMachine
 {
     public class StatefulMonoBehaviour<T> : MonoBehaviour where T : StatefulMonoBehaviour<T>
     {

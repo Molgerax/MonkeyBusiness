@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace BFB.Core.VariableReferences
+namespace MonkeyBusiness.Core.VariableReferences.GenericVariables
 {
     [Serializable, CreateAssetMenu(fileName = "Float", menuName = "BFB/Variables/Float")]
     public class FloatAsset : ValueAsset<float>

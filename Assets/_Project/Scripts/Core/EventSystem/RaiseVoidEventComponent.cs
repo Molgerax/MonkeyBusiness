@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+using MonkeyBusiness.Core.EventSystem.Generic_Events;
 using UnityEngine;
 
-namespace BFB.Core.Events
+namespace MonkeyBusiness.Core.EventSystem
 {
     public class RaiseVoidEventComponent : MonoBehaviour
     {

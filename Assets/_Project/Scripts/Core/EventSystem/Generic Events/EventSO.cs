@@ -1,8 +1,9 @@
 using System.Collections.Generic;
+using MonkeyBusiness.Core.EventSystem.Generic_Events.EventListeners;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace BFB.Core.Events
+namespace MonkeyBusiness.Core.EventSystem.Generic_Events
 {
     public abstract class BaseEventSO : ScriptableObject
     {

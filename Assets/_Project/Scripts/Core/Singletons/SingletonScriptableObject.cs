@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace BFB.Core.Singletons
+namespace MonkeyBusiness.Core.Singletons
 {
     public abstract class SingletonScriptableObject<T> : ScriptableObject where T : ScriptableObject
     {

@@ -1,12 +1,13 @@
 using System.Collections.Generic;
+using MonkeyBusiness.Core.VariableReferences.GenericVariables;
+using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
 #if UNITY_EDITOR
-using UnityEditor;
 #endif
 
-namespace BFB.Core.VariableReferences
+namespace MonkeyBusiness.Core.VariableReferences
 {
     [CreateAssetMenu(fileName = "NewValueAssetCollection", menuName = "BFB/Variables/Value Asset Collection")]
     public class ValueAssetCollection : ScriptableObject

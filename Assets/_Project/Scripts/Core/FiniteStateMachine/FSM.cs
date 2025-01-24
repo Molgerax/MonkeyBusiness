@@ -1,4 +1,4 @@
-namespace BFB.Core.FSM
+namespace MonkeyBusiness.Core.FiniteStateMachine
 {
     public class FSM<T, TState> where TState : FSMBaseState<T>
     {

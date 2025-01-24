@@ -1,9 +1,4 @@
-using System;
-using UltEvents;
-using UnityEngine;
-using UnityEngine.Events;
-
-namespace BFB.Core.FSM
+namespace MonkeyBusiness.Core.FiniteStateMachine
 {
     public interface IFSMState<T>
     {

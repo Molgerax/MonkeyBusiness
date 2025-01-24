@@ -1,7 +1,6 @@
-using BFB.Core.FSM;
 using UnityEngine;
 
-namespace BFB.Core.FSM.StateTransitions
+namespace MonkeyBusiness.Core.FiniteStateMachine.StateTransitions
 {
     public abstract class BaseStateTransition<T> : MonoBehaviour where T : StatefulMonoBehaviour<T>
     {

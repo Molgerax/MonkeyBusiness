@@ -1,8 +1,8 @@
-using BFB.Core.VariableReferences;
+using MonkeyBusiness.Core.VariableReferences.GenericVariables;
 using UltEvents;
 using UnityEngine;
 
-namespace BFB.Core.Events
+namespace MonkeyBusiness.Core.EventSystem
 {
     public class IntCompareComponent : MonoBehaviour
     {

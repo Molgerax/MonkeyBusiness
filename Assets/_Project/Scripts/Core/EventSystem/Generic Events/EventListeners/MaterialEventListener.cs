@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BFB.Core.Events
+namespace MonkeyBusiness.Core.EventSystem.Generic_Events.EventListeners
 {
     public class MaterialEventListener : BaseEventListener<Material>
     {

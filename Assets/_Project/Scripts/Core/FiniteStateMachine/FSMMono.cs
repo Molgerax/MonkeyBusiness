@@ -1,4 +1,4 @@
-namespace BFB.Core.FSM
+namespace MonkeyBusiness.Core.FiniteStateMachine
 {
     public class FSMMono<T> where T : StatefulMonoBehaviour<T>
     {

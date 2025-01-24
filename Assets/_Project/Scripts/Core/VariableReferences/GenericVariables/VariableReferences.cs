@@ -1,8 +1,8 @@
-using UnityEngine;
 using System;
 using Sirenix.OdinInspector;
+using UnityEngine;
 
-namespace BFB.Core.VariableReferences
+namespace MonkeyBusiness.Core.VariableReferences.GenericVariables
 {
     [Serializable]
     [InlineProperty]

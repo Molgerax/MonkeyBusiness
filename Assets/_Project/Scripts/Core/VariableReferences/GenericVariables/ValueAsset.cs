@@ -1,9 +1,9 @@
+using UnityEditor;
 using UnityEngine;
 #if UNITY_EDITOR
-using UnityEditor;
 #endif
 
-namespace BFB.Core.VariableReferences
+namespace MonkeyBusiness.Core.VariableReferences.GenericVariables
 {
     public abstract class ValueAsset : ScriptableObject
     {

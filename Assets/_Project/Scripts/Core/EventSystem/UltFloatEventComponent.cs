@@ -1,7 +1,7 @@
 using UltEvents;
 using UnityEngine;
 
-namespace BFB.Core.Events
+namespace MonkeyBusiness.Core.EventSystem
 {
     public class UltFloatEventComponent : MonoBehaviour
     {

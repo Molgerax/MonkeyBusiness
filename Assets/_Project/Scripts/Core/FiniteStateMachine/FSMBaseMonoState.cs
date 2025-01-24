@@ -1,10 +1,8 @@
-using System;
-using BFB.Core.FSM.StateTransitions;
+using MonkeyBusiness.Core.FiniteStateMachine.StateTransitions;
 using UltEvents;
 using UnityEngine;
-using UnityEngine.Events;
 
-namespace BFB.Core.FSM
+namespace MonkeyBusiness.Core.FiniteStateMachine
 {
     [DefaultExecutionOrder(-10)]
     public abstract class FSMBaseMonoState<T> : MonoBehaviour, IFSMState<T> where T : StatefulMonoBehaviour<T>
