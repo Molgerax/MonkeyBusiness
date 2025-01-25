@@ -6,6 +6,13 @@ namespace MonkeyBusiness.Gameplay.Picking
 {
     public class Ingredient : MonoBehaviour
     {
+        public enum IngredientType
+        {
+            Beetle, Onion, Pear, Radish
+        }
+
+        public IngredientType Type = IngredientType.Beetle;
+        
         [SerializeField] private float cookDuration = 10;
         [SerializeField] private UltEvent onCookBegin;
         [SerializeField] private UltEvent onCookInterrupt;
@@ -39,7 +46,8 @@ namespace MonkeyBusiness.Gameplay.Picking
                 return;
 
             float waterDist = Mathf.Max(0, Water.WaterLevel - transform.position.y);
-            waterDist = waterDist > 0 ? 1 : 0;
+            //waterDist = waterDist > 0 ? 1 : 0;
+            waterDist = Mathf.Clamp01(waterDist);
 
             Vector3 force = new Vector3(0, waterDist * buoyancy, 0);
             _rb.AddForce(force);
