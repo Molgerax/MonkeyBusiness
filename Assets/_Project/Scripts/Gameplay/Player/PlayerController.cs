@@ -22,7 +22,7 @@ namespace MonkeyBusiness.Gameplay.Player
 
         #region Public Fields
 
-        public SUPERCharacterAIO SuperCharacterAio;
+        public PlayerMovement Movement;
         public AnimationController AnimationController;
         public PlayerInputs Inputs;
 

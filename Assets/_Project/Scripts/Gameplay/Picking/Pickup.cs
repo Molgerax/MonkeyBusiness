@@ -24,9 +24,9 @@ namespace MonkeyBusiness.Gameplay.Picking
             transform.parent = holder.transform;
             transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
 
-            _rb.isKinematic = true;
             _rb.linearVelocity = Vector3.zero;
             _rb.angularVelocity = Vector3.zero;
+            _rb.isKinematic = true;
         }
 
         public void EndHold()

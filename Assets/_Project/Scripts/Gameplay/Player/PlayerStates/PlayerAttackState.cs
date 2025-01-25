@@ -27,17 +27,12 @@ namespace MonkeyBusiness.Gameplay.Player.PlayerStates
         {
             //entity.AnimationController.Animator.Play("Attack");
 
-            entity.SuperCharacterAio.walkingSpeed = 0;
-
-            entity.SuperCharacterAio.rotateCharacterToCameraForward = true;
-            entity.SuperCharacterAio.rotateForwardsSpeed = rotationSpeed;
             _attackTime = 0f;
         }
 
         public override void ExitState(PlayerController entity)
         {
             entity.EndAttack();
-            entity.SuperCharacterAio.rotateCharacterToCameraForward = false;
         }
 
         public override void CheckSwitchState(PlayerController entity)
@@ -60,12 +55,15 @@ namespace MonkeyBusiness.Gameplay.Player.PlayerStates
 
             _attackTime += deltaTime;
 
-            
+            if (_attackTime < windUpTime)
+            {
+                entity.Movement.RotatePlayerTowardsCamera();
+            }
             
             if (_attackTime > windUpTime && !entity.Hitbox.IsActive())
             {
                 entity.BeginAttack();
-                entity.SuperCharacterAio.rotateCharacterToCameraForward = false;
+                entity.PickupHolder.DropPickup();
             }
 
             if (_attackTime > windUpTime + attackDuration && entity.Hitbox.IsActive())

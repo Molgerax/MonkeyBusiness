@@ -26,10 +26,6 @@ namespace MonkeyBusiness.Gameplay.Player.PlayerStates
         {
             //entity.AnimationController.Animator.Play("Attack");
 
-            entity.SuperCharacterAio.rotateCharacterToCameraForward = true;
-            entity.SuperCharacterAio.rotateForwardsSpeed = rotationSpeed;
-            entity.SuperCharacterAio.walkingSpeed = 0;
-
             _extendTime = 0f;
             
             entity.PickupHolder.BeginPicking();
@@ -38,8 +34,6 @@ namespace MonkeyBusiness.Gameplay.Player.PlayerStates
         public override void ExitState(PlayerController entity)
         {
             entity.PickupHolder.EndPicking();
-            
-            entity.SuperCharacterAio.rotateCharacterToCameraForward = false;
         }
 
         public override void CheckSwitchState(PlayerController entity)
@@ -61,7 +55,8 @@ namespace MonkeyBusiness.Gameplay.Player.PlayerStates
             //entity.AnimationController.Animator.SetFloat("Speed", entity.MoveController.Motor.BaseVelocity.magnitude);
 
             _extendTime += deltaTime;
-
+            
+            entity.Movement.RotatePlayerTowardsCamera();
         }
         
         #endregion
