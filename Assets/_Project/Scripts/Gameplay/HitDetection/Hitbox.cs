@@ -88,8 +88,7 @@ namespace MonkeyBusiness.Gameplay.HitDetection
             _state = HitboxState.Closed;
         }
 
-        
-
+        public bool IsActive() => _state == HitboxState.Open || _state == HitboxState.Colliding;
         
 
         public bool CheckHitbox(Vector3 center, Vector3 halfExtents, Quaternion rot, LayerMask layer)
@@ -133,13 +132,13 @@ namespace MonkeyBusiness.Gameplay.HitDetection
 
             _currentHitData = new HitData()
             {
-                damage = _hitResponder?.Damage ?? 0,
+                Damage = _hitResponder?.Damage ?? 0,
                 
-                hitPoint = Center,
-                hitNormal = Rotation * Vector3.forward,
+                HitPoint = Center,
+                HitNormal = Rotation * Vector3.forward,
 
-                hitbox = this,
-                hurtbox = hurtbox,
+                Hitbox = this,
+                Hurtbox = hurtbox,
             };
 
             if (!_currentHitData.Validate()) return false;

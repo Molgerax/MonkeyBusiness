@@ -818,15 +818,17 @@ public class SUPERCharacterAIO : MonoBehaviour{
         playerCamera.transform.rotation = quatHeadRot;
     }
 
+    public float rotateForwardsSpeed = 10;
+    
     void UpdateBodyRotation_3rdPerson(){
          //if is moving, rotate capsule to match camera forward   //change button down to bool of isFiring or isTargeting
-        if(!isIdle && !isSliding && currentGroundInfo.isGettingGroundInfo){
+        if(!isIdle && !isSliding && currentGroundInfo.isGettingGroundInfo && !rotateCharacterToCameraForward){
             transform.rotation = (Quaternion.Euler(0,Mathf.MoveTowardsAngle(p_Rigidbody.rotation.eulerAngles.y,(Mathf.Atan2(InputDir.x,InputDir.z)*Mathf.Rad2Deg),10), 0));
             //transform.rotation = Quaternion.Euler(0,Mathf.MoveTowardsAngle(transform.eulerAngles.y,(Mathf.Atan2(InputDir.x,InputDir.z)*Mathf.Rad2Deg),2.5f), 0);
         }else if(isSliding){
             transform.localRotation = (Quaternion.Euler(Vector3.up*Mathf.MoveTowardsAngle(p_Rigidbody.rotation.eulerAngles.y,(Mathf.Atan2(p_Rigidbody.linearVelocity.x,p_Rigidbody.linearVelocity.z)*Mathf.Rad2Deg),10)));
-        }else if(!currentGroundInfo.isGettingGroundInfo && rotateCharacterToCameraForward){
-            transform.localRotation = (Quaternion.Euler(Vector3.up*Mathf.MoveTowardsAngle(p_Rigidbody.rotation.eulerAngles.y, headRot.y,10)));
+        }else if(rotateCharacterToCameraForward){
+            transform.localRotation = (Quaternion.Euler(Vector3.up*Mathf.MoveTowardsAngle(p_Rigidbody.rotation.eulerAngles.y, headRot.y,rotateForwardsSpeed)));
         }
     }
     #endregion

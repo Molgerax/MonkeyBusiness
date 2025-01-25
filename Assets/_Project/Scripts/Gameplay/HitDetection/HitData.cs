@@ -4,21 +4,21 @@ namespace MonkeyBusiness.Gameplay.HitDetection
 {
     public struct HitData
     {
-        public int damage;
-        public Vector3 hitPoint;
-        public Vector3 hitNormal;
+        public int Damage;
+        public Vector3 HitPoint;
+        public Vector3 HitNormal;
 
-        public IHurtbox hurtbox;
-        public IHitbox hitbox;
+        public IHurtbox Hurtbox;
+        public IHitbox Hitbox;
 
         public bool Validate()
         {
-            if (hurtbox == null) return false;
-            if (hurtbox.CheckHit(this) == false) return false;
-            if (hurtbox.HurtResponder != null && hurtbox.HurtResponder.CheckHit(this) == false) return false;
-            if (hitbox.HitResponder == null) return true;
+            if (Hurtbox == null) return false;
+            if (Hurtbox.CheckHit(this) == false) return false;
+            if (Hurtbox.HurtResponder != null && Hurtbox.HurtResponder.CheckHit(this) == false) return false;
+            if (Hitbox.HitResponder == null) return true;
             
-            return hitbox.HitResponder.CheckHit(this);
+            return Hitbox.HitResponder.CheckHit(this);
         }
     }
 

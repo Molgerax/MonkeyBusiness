@@ -1,13 +1,38 @@
+using System;
+using MonkeyBusiness.Core.FiniteStateMachine;
+using MonkeyBusiness.Gameplay.Animations;
+using MonkeyBusiness.Gameplay.HitDetection;
+using MonkeyBusiness.Gameplay.Picking;
 using MonkeyBusiness.Input;
+using SUPERCharacter;
 using UnityEngine;
 
 namespace MonkeyBusiness.Gameplay.Player
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : StatefulMonoBehaviour<PlayerController>, IHitResponder
     {
-        #region Private Fields
+        #region Serialized Fields
 
-        private PlayerInputs _inputs;
+        [SerializeField] private Hitbox hitbox;
+        public Hitbox Hitbox => hitbox;
+
+        public PickupHolder PickupHolder;
+        
+        #endregion
+
+        #region Public Fields
+
+        public SUPERCharacterAIO SuperCharacterAio;
+        public AnimationController AnimationController;
+        public PlayerInputs Inputs;
+
+        #endregion
+        
+        #region State Machine
+
+        [SerializeField] public FSMBaseMonoState<PlayerController> moveState;
+        [SerializeField] public FSMBaseMonoState<PlayerController> attackState;
+        [SerializeField] public FSMBaseMonoState<PlayerController> extendState;
 
         #endregion
 
@@ -16,11 +41,37 @@ namespace MonkeyBusiness.Gameplay.Player
 
         public void Awake()
         {
-            _inputs = PlayerInputs.Instance;
+            Inputs = PlayerInputs.Instance;
+            
+            fsmMono = new FSMMono<PlayerController>();
+            fsmMono.Configure(this, moveState);
         }
-
 
         #endregion
 
+        
+        
+        public void BeginAttack()
+        {
+            hitbox.HitResponder = this;
+            hitbox.StartCollisionCheck();
+        }
+
+        public void EndAttack()
+        {
+            hitbox.HitResponder = null;
+            hitbox.StopCollisionCheck();
+        }
+
+        public int Damage => 1;
+        public bool CheckHit(HitData data)
+        {
+            return true;
+        }
+
+        public void Response(HitData data)
+        {
+            
+        }
     }
 }
