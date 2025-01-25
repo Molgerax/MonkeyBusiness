@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{80051b70-73d6-41c3-8c51-a90cef220c79}">
+		<property name="assetPath">
+			<value>Monkey/Happy/A_MNKY_BellaHappy_2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.708125</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dfac2fca-6540-42c2-8492-29e641924f62}</destination>
+		</relationship>
+	</object>
+</objects>

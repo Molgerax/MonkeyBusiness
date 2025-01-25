@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{bf29b314-ece2-4d74-85ff-1c989a522778}">
+		<property name="assetPath">
+			<value>Monkey/Eating/A_MNKY_KonradEating_2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.25608333333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dfac2fca-6540-42c2-8492-29e641924f62}</destination>
+		</relationship>
+	</object>
+</objects>

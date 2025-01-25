@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4aa0118a-b063-45bb-9218-ab997d173c24}">
+		<property name="assetPath">
+			<value>Monkey/Hit/A_MNKY_KonradHit_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.37743749999999998</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dfac2fca-6540-42c2-8492-29e641924f62}</destination>
+		</relationship>
+	</object>
+</objects>

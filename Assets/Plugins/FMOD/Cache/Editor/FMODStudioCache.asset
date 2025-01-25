@@ -1,0 +1,423 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8433644537552180721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Customers
+  m_EditorClassIdentifier: 
+  Name: Customers
+  StudioPath: parameter:/Customers
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 3231739010
+    data2: 385670487
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-8006172423988238779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../h_da/A&G/GGJ 2025/MonkeyBusiness-20250125T163536Z-001/MonkeyBusiness/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638734462584047542
+  FileSizes:
+  - Name: Desktop
+    Value: 5688832
+  Exists: 1
+--- !u!114 &-7790187230531460131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Monkey/A_MNKY_MonkeyHit
+  m_EditorClassIdentifier: 
+  Path: event:/Monkey/A_MNKY_MonkeyHit
+  Guid:
+    Data1: 360983575
+    Data2: 1303181010
+    Data3: 186487442
+    Data4: 345357180
+  Banks:
+  - {fileID: -8006172423988238779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6095198852171366712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/A_SFX_Ingredience
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/A_SFX_Ingredience
+  Guid:
+    Data1: -1024889527
+    Data2: 1115118968
+    Data3: -577292915
+    Data4: 599243272
+  Banks:
+  - {fileID: -8006172423988238779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3086119436343842145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/A_SFX_Hit
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/A_SFX_Hit
+  Guid:
+    Data1: 359191486
+    Data2: 1102805519
+    Data3: 1295932821
+    Data4: 661093468
+  Banks:
+  - {fileID: -8006172423988238779}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1541
+--- !u!114 &-3054579272467964434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../h_da/A&G/GGJ 2025/MonkeyBusiness-20250125T163536Z-001/MonkeyBusiness/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638734462584070156
+  FileSizes:
+  - Name: Desktop
+    Value: 1314
+  Exists: 1
+--- !u!114 &-746318372928724712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/A_SFX_Soup
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/A_SFX_Soup
+  Guid:
+    Data1: -125528799
+    Data2: 1130354613
+    Data3: 1221778358
+    Data4: -1220207480
+  Banks:
+  - {fileID: -8006172423988238779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-355705136964339981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/A_SFX_HotPotLoop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/A_SFX_HotPotLoop
+  Guid:
+    Data1: -329883362
+    Data2: 1193781996
+    Data3: 1469566350
+    Data4: 1548355032
+  Banks:
+  - {fileID: -8006172423988238779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8750
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -3054579272467964434}
+  - {fileID: -8006172423988238779}
+  EditorEvents:
+  - {fileID: -7790187230531460131}
+  - {fileID: -355705136964339981}
+  - {fileID: -746318372928724712}
+  - {fileID: -6095198852171366712}
+  - {fileID: 4218535562215683485}
+  - {fileID: 4680045104324551182}
+  - {fileID: 3843115150750879359}
+  - {fileID: 9021536207866736747}
+  - {fileID: 7051150816126611984}
+  - {fileID: -3086119436343842145}
+  - {fileID: 4888082824174511815}
+  EditorParameters:
+  - {fileID: -8433644537552180721}
+  MasterBanks:
+  - {fileID: -8006172423988238779}
+  StringsBanks:
+  - {fileID: -3054579272467964434}
+  cacheTime: 638734462584070156
+  cacheVersion: 131622
+--- !u!114 &3843115150750879359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/A_MUSIC_Menu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/A_MUSIC_Menu
+  Guid:
+    Data1: 1262060422
+    Data2: 1278914844
+    Data3: 7688361
+    Data4: -6824526
+  Banks:
+  - {fileID: -8006172423988238779}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 174193
+--- !u!114 &4218535562215683485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/A_SFX_SoupFinish
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/A_SFX_SoupFinish
+  Guid:
+    Data1: 1187404628
+    Data2: 1331957506
+    Data3: 1598484406
+    Data4: -489257039
+  Banks:
+  - {fileID: -8006172423988238779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4680045104324551182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Monkey/A_MNKY_TalkLoop
+  m_EditorClassIdentifier: 
+  Path: event:/Monkey/A_MNKY_TalkLoop
+  Guid:
+    Data1: -786071452
+    Data2: 1187533738
+    Data3: -537862216
+    Data4: 591874030
+  Banks:
+  - {fileID: -8006172423988238779}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 28000
+--- !u!114 &4888082824174511815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/A_MUSIC_Ingame
+  m_EditorClassIdentifier: 
+  Path: event:/Music/A_MUSIC_Ingame
+  Guid:
+    Data1: 1018353857
+    Data2: 1215795006
+    Data3: 1604233118
+    Data4: -84956024
+  Banks:
+  - {fileID: -8006172423988238779}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8772966759847540417}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 210302
+--- !u!114 &7051150816126611984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Monkey/A_MNKY_EatingMonkey
+  m_EditorClassIdentifier: 
+  Path: event:/Monkey/A_MNKY_EatingMonkey
+  Guid:
+    Data1: 1947831228
+    Data2: 1321150334
+    Data3: 1772775838
+    Data4: -1207889231
+  Banks:
+  - {fileID: -8006172423988238779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8772966759847540417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/A_MUSIC_Ingame/Customers
+  m_EditorClassIdentifier: 
+  Name: Customers
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 3231739010
+    data2: 385670487
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &9021536207866736747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Monkey/A_MNKY_HappyMonkey
+  m_EditorClassIdentifier: 
+  Path: event:/Monkey/A_MNKY_HappyMonkey
+  Guid:
+    Data1: -823097716
+    Data2: 1304346869
+    Data3: -828953950
+    Data4: 1259621712
+  Banks:
+  - {fileID: -8006172423988238779}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
