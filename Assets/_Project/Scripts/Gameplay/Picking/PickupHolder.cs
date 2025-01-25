@@ -33,7 +33,7 @@ namespace MonkeyBusiness.Gameplay.Picking
             CurrentPickup = null;
         }
 
-        public int Damage { get; }
+        public int Damage => 0;
         public bool CheckHit(HitData data)
         {
             if (CurrentPickup)

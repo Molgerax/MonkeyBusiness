@@ -1,10 +1,8 @@
-using System;
 using MonkeyBusiness.Core.FiniteStateMachine;
 using MonkeyBusiness.Gameplay.Animations;
 using MonkeyBusiness.Gameplay.HitDetection;
 using MonkeyBusiness.Gameplay.Picking;
 using MonkeyBusiness.Input;
-using SUPERCharacter;
 using UnityEngine;
 
 namespace MonkeyBusiness.Gameplay.Player
@@ -71,7 +69,8 @@ namespace MonkeyBusiness.Gameplay.Player
 
         public void Response(HitData data)
         {
-            
+            if (data.Hurtbox != null && data.Hurtbox.HurtResponder != null)
+                data.Hurtbox.HurtResponder.Response(data);
         }
     }
 }
