@@ -34,6 +34,8 @@ namespace MonkeyBusiness.Gameplay.Player
 
         #endregion
 
+        private IHurtResponder[] _hitObjects = new IHurtResponder[16];
+        private int _hitObjectCount = 0;
         
         #region Mono Methods
 
@@ -47,10 +49,30 @@ namespace MonkeyBusiness.Gameplay.Player
 
         #endregion
 
-        
+        private void ClearArray()
+        {
+            for (int i = 0; i < _hitObjects.Length; i++)
+            {
+                _hitObjects[i] = null;
+            }
+
+            _hitObjectCount = 0;
+        }
+
+        private bool IsKickedInArray(IHurtResponder kickable)
+        {
+            for (int i = 0; i < _hitObjectCount; i++)
+            {
+                if (_hitObjects[i] == kickable) return true;
+            }
+
+            return false;
+        }
+
         
         public void BeginAttack()
         {
+            ClearArray();
             hitbox.HitResponder = this;
             hitbox.StartCollisionCheck();
         }
@@ -68,9 +90,19 @@ namespace MonkeyBusiness.Gameplay.Player
         }
 
         public void Response(HitData data)
-        {
-            if (data.Hurtbox != null && data.Hurtbox.HurtResponder != null)
-                data.Hurtbox.HurtResponder.Response(data);
+        { 
+            if (data.Hurtbox == null)
+               return;
+
+            if (data.Hurtbox.HurtResponder == null)
+                return;
+
+            IHurtResponder responder = data.Hurtbox.HurtResponder;
+            if (IsKickedInArray(responder))
+                return;
+
+            _hitObjects[_hitObjectCount++] = responder;
+            data.Hurtbox.HurtResponder.Response(data);
         }
     }
 }

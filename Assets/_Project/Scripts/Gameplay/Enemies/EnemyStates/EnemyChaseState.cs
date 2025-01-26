@@ -9,6 +9,7 @@ namespace MonkeyBusiness.Gameplay.Enemies.EnemyStates
         #region Serialize Fields
 
         [SerializeField] private float moveSpeed = 8;
+        [SerializeField] private float eatRadius = 1;
 
         #endregion
 
@@ -40,9 +41,17 @@ namespace MonkeyBusiness.Gameplay.Enemies.EnemyStates
                 return;
             }
 
-            if (Vector3.Distance(entity.transform.position, _currentTarget.transform.position) >= entity.detectRadius)
+            float dist = Vector3.Distance(entity.transform.position, _currentTarget.transform.position);
+
+            if (dist >= entity.detectRadius)
             {
                 entity.ChangeState(entity.idleState);
+                return;
+            }
+
+            if (dist < eatRadius)
+            {
+                entity.ChangeState(entity.eatState);
                 return;
             }
         }

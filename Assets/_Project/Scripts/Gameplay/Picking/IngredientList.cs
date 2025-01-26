@@ -3,6 +3,7 @@ using Random = UnityEngine.Random;
 
 namespace MonkeyBusiness.Gameplay.Picking
 {
+    [DefaultExecutionOrder(-100)]
     public class IngredientList : MonoBehaviour
     {
         public static IngredientList Instance;

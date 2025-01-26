@@ -27,6 +27,7 @@ namespace MonkeyBusiness.Gameplay.Enemies
         [SerializeField] public FSMBaseMonoState<EnemyController> idleState;
         [SerializeField] public FSMBaseMonoState<EnemyController> stunnedState;
         [SerializeField] public FSMBaseMonoState<EnemyController> chaseState;
+        [SerializeField] public FSMBaseMonoState<EnemyController> eatState;
 
         #endregion
 

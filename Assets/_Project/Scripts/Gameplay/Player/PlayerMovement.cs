@@ -86,7 +86,7 @@ namespace MonkeyBusiness.Gameplay.Player
             Vector2 lookInput = controller.Inputs.LookInput;
 
             _cameraX = Mathf.Clamp(_cameraX + lookInput.y, -10, 45);
-            _cameraX = 35;
+            _cameraX = 25;
             _cameraY += lookInput.x;
 
             _cameraY %= 720;
