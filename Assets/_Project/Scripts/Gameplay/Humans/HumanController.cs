@@ -61,6 +61,7 @@ namespace MonkeyBusiness.Gameplay.Humans
         {
             onSuccess?.Invoke();
             WantsToLeave = true;
+            FMODUnity.RuntimeManager.PlayOneShot("A_SFX_SoupFinish");
         }
 
         private void FeedFailure(Ingredient ingredient)

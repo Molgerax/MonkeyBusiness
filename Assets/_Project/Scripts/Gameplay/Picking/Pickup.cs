@@ -21,6 +21,8 @@ namespace MonkeyBusiness.Gameplay.Picking
             Holder = holder;
             IsHeld = true;
 
+            FMODUnity.RuntimeManager.PlayOneShot("A_SFX_Ingredience");
+
             transform.parent = holder.transform;
             transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
 

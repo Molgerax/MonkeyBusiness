@@ -18,6 +18,8 @@ namespace MonkeyBusiness.Gameplay.Enemies.EnemyStates
         {
             //entity.AnimationController.Animator.Play("IdleWalkBlend");
             _stunTime = 0;
+            FMODUnity.RuntimeManager.PlayOneShot("A_SFX_Hit");
+            FMODUnity.RuntimeManager.PlayOneShot("A_MNKY_MonkeyHit");
         }
 
         public override void ExitState(EnemyController entity)
