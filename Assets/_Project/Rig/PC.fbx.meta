@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: 5227cef4d0a27064d9eee4bcdfb73410
+guid: 53b6fe2040c909340bba6441eb336cf2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cook_UV1
+    second: {fileID: 2100000, guid: be0e955c4858f0b4b9d8a30bde1dc218, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head1
+    second: {fileID: 2100000, guid: adecba1c156261544b767c80b0747c1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: f6801fa243827284395378a60547509c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -97,7 +112,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
