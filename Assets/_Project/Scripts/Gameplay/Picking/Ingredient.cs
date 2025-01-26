@@ -26,9 +26,13 @@ namespace MonkeyBusiness.Gameplay.Picking
         [SerializeField] private UltEvent onCookDone;
 
         [SerializeField] private float buoyancy = 10;
+
+        [SerializeField] private Animator animator;
         
         private float _cookTime = 0;
 
+        public float CookingProgress => Mathf.Clamp01(_cookTime / cookDuration);
+        
         public bool IsDone => _cookTime >= cookDuration;
 
         private Rigidbody _rb;
@@ -45,6 +49,7 @@ namespace MonkeyBusiness.Gameplay.Picking
         private void Update()
         {
             CookTicking(Time.deltaTime);
+            TryAnimationAlive();
         }
 
         private void FixedUpdate()
@@ -79,6 +84,15 @@ namespace MonkeyBusiness.Gameplay.Picking
             }
         }
 
+        private void TryAnimationAlive()
+        {
+            if(!animator)
+                return;
+            
+            animator.SetFloat("Alive", 1 - CookingProgress);
+            animator.SetBool("IsDone", IsDone);
+        }
+        
         private void OnTriggerEnter(Collider other)
         {
             if (!other.TryGetComponent(out HotspringWater water))

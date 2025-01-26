@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccedc6a1ec2eb0c4a9bc4259ac7bf919, type: 3}
   m_Name: Beetle
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7671441361673256943, guid: 0d7547ef8020ae147adb7611a8056bac, type: 3}
+  prefab: {fileID: 4257689920448635686, guid: 7082f83b6aa884a4581067fe215be820, type: 3}

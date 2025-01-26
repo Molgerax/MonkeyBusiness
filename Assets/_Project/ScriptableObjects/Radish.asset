@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccedc6a1ec2eb0c4a9bc4259ac7bf919, type: 3}
   m_Name: Radish
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7671441361673256943, guid: 090b3153499a1e44fb4cefce5297aa00, type: 3}
+  prefab: {fileID: 7625533328026182598, guid: 85cdbbe87ec1e87428ac5b7aebd46a4d, type: 3}
