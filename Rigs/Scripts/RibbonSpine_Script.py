@@ -6,9 +6,9 @@ mySpine = 'C_RibbonSpine_LFT'
 jntList = []
 
 ctrlSize = 0.5
-uValues = [0.0, 0.2, 0.4, 0.6, 0.8, 0.999]
+uValues = [0.0, 0.5, 0.999]
 
-for index, jnt in enumerate(range(5)):
+for index, jnt in enumerate(range(3)):
     cmds.select(clear = True)
     nr = index + 1
     
@@ -42,7 +42,7 @@ for index, jnt in enumerate(range(5)):
     cmds.setAttr('{}.parameterV'.format(spineInfo), 0.5)
     cmds.setAttr('{}.parameterU'.format(spineInfo), uValues[index])
     
-for index, jnt in enumerate(range(5)):
+for index, jnt in enumerate(range(3)):
     
     nr = index + 1
     
@@ -64,5 +64,5 @@ for index, jnt in enumerate(range(5)):
     cmds.setAttr('{}.parameterU'.format(spineInfo), uValues[index])
     
     #set up aim constraints
-    if index != 4:
+    if index != 2:
         cmds.aimConstraint(jntList[nr],  jntList[index], aim = (0.0, 1.0, 0.0), u = (1.0, 0.0, 0.0), wut = 'object', wuo = spineLoc[0])
