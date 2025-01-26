@@ -4,12 +4,14 @@ using DG.Tweening;
 using MonkeyBusiness.Gameplay.Picking;
 using UnityEngine;
 using UnityEngine.Pool;
+using Random = UnityEngine.Random;
 
 namespace MonkeyBusiness.Gameplay.Humans
 {
     public class HumanSpawner : MonoBehaviour
     {
         [SerializeField] private HumanController humanPrefab;
+        [SerializeField] private Material[] humanMaterials;
 
         [SerializeField] private float spawnRange = 20f;
         [SerializeField] private int activeHumanCount = 3;
@@ -174,6 +176,7 @@ namespace MonkeyBusiness.Gameplay.Humans
         {
             pooledObject.gameObject.SetActive(true);
             pooledObject.Ingredient = IngredientList.Instance.GetRandom();
+            pooledObject.SetMaterial(GetRandomMaterial());
         }
         
         private void OnReleaseToPool(HumanController pooledObject)
@@ -189,6 +192,12 @@ namespace MonkeyBusiness.Gameplay.Humans
         #endregion
 
 
+        private Material GetRandomMaterial()
+        {
+            int index = Random.Range(0, humanMaterials.Length);
+            return humanMaterials[index];
+        }
+        
         private void OnDrawGizmosSelected()
         {
             for (int i = 0; i < activeHumanCount; i++)

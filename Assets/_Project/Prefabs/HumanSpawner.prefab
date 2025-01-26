@@ -79,6 +79,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   humanPrefab: {fileID: 4986784884046655389, guid: 3ad7731b8c59492439e96fb4cbc2e4e8, type: 3}
+  humanMaterials:
+  - {fileID: 2100000, guid: 74917e4f0f3f05644be3820d26747d08, type: 2}
+  - {fileID: 2100000, guid: 996d14915f183a64c8a6cc0388d0d9bf, type: 2}
+  - {fileID: 2100000, guid: c75cb80d466c24f4f9195e00fd24f6b5, type: 2}
   spawnRange: 20
   activeHumanCount: 1
   queuedHumanCount: 10

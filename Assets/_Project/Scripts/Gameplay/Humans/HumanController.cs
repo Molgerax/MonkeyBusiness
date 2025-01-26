@@ -9,7 +9,7 @@ namespace MonkeyBusiness.Gameplay.Humans
     public class HumanController : MonoBehaviour
     {
         [SerializeField] public IngredientSO Ingredient;
-
+        [SerializeField] private MeshRenderer meshRenderer;
         [SerializeField] private UltEvent onSuccess;
         [SerializeField] private UltEvent onFailure;
         [SerializeField] private UltEvent onFailureNotDone;
@@ -35,6 +35,11 @@ namespace MonkeyBusiness.Gameplay.Humans
 
             if(other.TryGetComponent(out Ingredient ingredient))
                 ReceiveIngredient(ingredient);
+        }
+
+        public void SetMaterial(Material material)
+        {
+            meshRenderer.sharedMaterial = material;
         }
 
         public void ReceiveIngredient(Ingredient ingredient)
