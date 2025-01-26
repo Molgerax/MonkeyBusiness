@@ -1,6 +1,7 @@
 using System;
 using UltEvents;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace MonkeyBusiness.Gameplay.Picking
 {
@@ -8,10 +9,16 @@ namespace MonkeyBusiness.Gameplay.Picking
     {
         public enum IngredientType
         {
-            Beetle, Onion, Pear, Radish
+            Beetle = 0, Onion = 1, Pear = 2, Radish = 3
         }
 
-        public IngredientType Type = IngredientType.Beetle;
+        public static IngredientType GetRandom()
+        {
+            int index = Random.Range(0, 4);
+            return (IngredientType)index;
+        }
+
+        public IngredientSO Asset;
         
         [SerializeField] private float cookDuration = 10;
         [SerializeField] private UltEvent onCookBegin;
