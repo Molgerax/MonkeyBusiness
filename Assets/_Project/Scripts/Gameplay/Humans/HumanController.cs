@@ -87,6 +87,7 @@ namespace MonkeyBusiness.Gameplay.Humans
             onSuccess?.Invoke();
             wantsToLeave = true;
             FMODUnity.RuntimeManager.PlayOneShot("A_SFX_SoupFinish");
+            FMODUnity.RuntimeManager.PlayOneShot("A_MNKY_HappyMonkey");
         }
 
         public void Activate()
@@ -99,6 +100,9 @@ namespace MonkeyBusiness.Gameplay.Humans
         {
             onFailure?.Invoke();
             wantsToLeave = true;
+            FMODUnity.RuntimeManager.PlayOneShot("A_SFX_SoupFinish");
+            FMODUnity.RuntimeManager.PlayOneShot("A_MNKY_MonkeyHit");
+
         }
         
         private void NotDoneFailure(Ingredient ingredient)

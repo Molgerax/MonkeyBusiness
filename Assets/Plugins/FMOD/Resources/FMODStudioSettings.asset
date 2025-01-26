@@ -672,8 +672,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../h_da/A&G/GGJ 2025/MonkeyBusiness-20250125T163536Z-001/MonkeyBusiness/MonkeyBusiness.fspro
-  sourceBankPath: ../../h_da/A&G/GGJ 2025/MonkeyBusiness-20250125T163536Z-001/MonkeyBusiness/Build
+  sourceProjectPath: FMOD Project/MonkeyBusiness/MonkeyBusiness.fspro
+  sourceBankPath: FMOD Project/MonkeyBusiness/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
