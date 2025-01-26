@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8551057170198461702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Project/MonkeyBusiness/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638735054990666520
+  FileSizes:
+  - Name: Desktop
+    Value: 5692128
+  Exists: 1
 --- !u!114 &-8433644537552180721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24,26 +44,6 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-8006172423988238779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../h_da/A&G/GGJ 2025/MonkeyBusiness-20250125T163536Z-001/MonkeyBusiness/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638734944199213605
-  FileSizes:
-  - Name: Desktop
-    Value: 5691136
-  Exists: 1
 --- !u!114 &-7790187230531460131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
     Data3: 186487442
     Data4: 345357180
   Banks:
-  - {fileID: -8006172423988238779}
+  - {fileID: -8551057170198461702}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -71,6 +71,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-6548637901315391024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD Project/MonkeyBusiness/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638735054990681543
+  FileSizes:
+  - Name: Desktop
+    Value: 1314
+  Exists: 1
 --- !u!114 &-6095198852171366712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,7 +110,7 @@ MonoBehaviour:
     Data3: -577292915
     Data4: 599243272
   Banks:
-  - {fileID: -8006172423988238779}
+  - {fileID: -8551057170198461702}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -117,7 +137,7 @@ MonoBehaviour:
     Data3: 1295932821
     Data4: 661093468
   Banks:
-  - {fileID: -8006172423988238779}
+  - {fileID: -8551057170198461702}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -125,26 +145,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1541
---- !u!114 &-3054579272467964434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../../h_da/A&G/GGJ 2025/MonkeyBusiness-20250125T163536Z-001/MonkeyBusiness/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638734944199223683
-  FileSizes:
-  - Name: Desktop
-    Value: 1314
-  Exists: 1
 --- !u!114 &-746318372928724712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
     Data3: 1221778358
     Data4: -1220207480
   Banks:
-  - {fileID: -8006172423988238779}
+  - {fileID: -8551057170198461702}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -191,7 +191,7 @@ MonoBehaviour:
     Data3: 1469566350
     Data4: 1548355032
   Banks:
-  - {fileID: -8006172423988238779}
+  - {fileID: -8551057170198461702}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -212,8 +212,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -3054579272467964434}
-  - {fileID: -8006172423988238779}
+  - {fileID: -6548637901315391024}
+  - {fileID: -8551057170198461702}
   EditorEvents:
   - {fileID: -7790187230531460131}
   - {fileID: -355705136964339981}
@@ -229,10 +229,10 @@ MonoBehaviour:
   EditorParameters:
   - {fileID: -8433644537552180721}
   MasterBanks:
-  - {fileID: -8006172423988238779}
+  - {fileID: -8551057170198461702}
   StringsBanks:
-  - {fileID: -3054579272467964434}
-  cacheTime: 638734944199223683
+  - {fileID: -6548637901315391024}
+  cacheTime: 638735054990681543
   cacheVersion: 131622
 --- !u!114 &3843115150750879359
 MonoBehaviour:
@@ -253,7 +253,7 @@ MonoBehaviour:
     Data3: 7688361
     Data4: -6824526
   Banks:
-  - {fileID: -8006172423988238779}
+  - {fileID: -8551057170198461702}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -280,7 +280,7 @@ MonoBehaviour:
     Data3: 1598484406
     Data4: -489257039
   Banks:
-  - {fileID: -8006172423988238779}
+  - {fileID: -8551057170198461702}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -307,7 +307,7 @@ MonoBehaviour:
     Data3: -537862216
     Data4: 591874030
   Banks:
-  - {fileID: -8006172423988238779}
+  - {fileID: -8551057170198461702}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -334,7 +334,7 @@ MonoBehaviour:
     Data3: 1604233118
     Data4: -84956024
   Banks:
-  - {fileID: -8006172423988238779}
+  - {fileID: -8551057170198461702}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -342,7 +342,7 @@ MonoBehaviour:
   - {fileID: 8772966759847540417}
   MinDistance: 1
   MaxDistance: 20
-  Length: 210302
+  Length: 403696
 --- !u!114 &7051150816126611984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,7 +362,7 @@ MonoBehaviour:
     Data3: 1772775838
     Data4: -1207889231
   Banks:
-  - {fileID: -8006172423988238779}
+  - {fileID: -8551057170198461702}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -413,7 +413,7 @@ MonoBehaviour:
     Data3: -828953950
     Data4: 1259621712
   Banks:
-  - {fileID: -8006172423988238779}
+  - {fileID: -8551057170198461702}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
