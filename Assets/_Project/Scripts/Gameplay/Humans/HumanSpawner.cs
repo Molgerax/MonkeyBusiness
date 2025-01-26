@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
+using FMODUnity;
 using MonkeyBusiness.Gameplay.Picking;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -24,6 +25,7 @@ namespace MonkeyBusiness.Gameplay.Humans
         [SerializeField] private Transform leaveStart;
         [SerializeField] private float leaveDistance = 40;
 
+        [SerializeField] private float timeToProgress = 20;
 
         [SerializeField] private Transform objectParent;
         public List<HumanController> activeHumans = new(8);
@@ -33,6 +35,10 @@ namespace MonkeyBusiness.Gameplay.Humans
 
         private float _refillTimer = 0;
         private int _oldCount;
+
+        private float _progressTimer = 0;
+
+        public int ActiveHumanCount => activeHumanCount;
         
         private void Awake()
         {
@@ -67,6 +73,17 @@ namespace MonkeyBusiness.Gameplay.Humans
             FillListWithEmpty();
             ResortActiveHumans();
             FillEmptySlots();
+            
+            _progressTimer += Time.deltaTime;
+            if (_progressTimer > timeToProgress)
+            {
+                _progressTimer = 0;
+                activeHumanCount++;
+
+                StudioGlobalParameterTrigger trigger = GetComponent<StudioGlobalParameterTrigger>();
+                if (trigger) 
+                    trigger.Value = activeHumanCount;
+            }
         }
 
         private Vector3 SpawnPosition(int index)

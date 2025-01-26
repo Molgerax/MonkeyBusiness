@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7179644538774303243}
   - component: {fileID: 4887134940586926225}
+  - component: {fileID: 2769894427583327469}
   m_Layer: 0
   m_Name: HumanSpawner
   m_TagString: Untagged
@@ -91,8 +92,25 @@ MonoBehaviour:
   queueMoveTime: 1
   leaveStart: {fileID: 6913810995718441834}
   leaveDistance: 50
+  timeToProgress: 20
   objectParent: {fileID: 543367536892199397}
   activeHumans: []
+--- !u!114 &2769894427583327469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4946506091207015442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Customers
+  TriggerEvent: 20
+  Value: 0
 --- !u!1 &8024502947669004107
 GameObject:
   m_ObjectHideFlags: 0
