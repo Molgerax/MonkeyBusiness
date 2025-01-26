@@ -6,7 +6,7 @@ namespace MonkeyBusiness.Gameplay.Picking
     public class IngredientSO : ScriptableObject
     {
         public Ingredient prefab;
-        
-        
+
+        public Material iconMaterial;
     }
 }

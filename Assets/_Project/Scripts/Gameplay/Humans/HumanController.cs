@@ -14,25 +14,36 @@ namespace MonkeyBusiness.Gameplay.Humans
         [SerializeField] private UltEvent onFailure;
         [SerializeField] private UltEvent onFailureNotDone;
 
+        [SerializeField] private GameObject thoughtBubble;
+        [SerializeField] private MeshRenderer iconRenderer;
+        
         public IObjectPool<HumanController> ObjectPool;
 
-        public bool WantsToLeave = false;
-
+        public bool wantsToLeave = false;
+        public bool isActive = false;
+        
         private void OnEnable()
         {
-            WantsToLeave = false;
+            wantsToLeave = false;
+            isActive = false;
+            thoughtBubble.SetActive(false);
         }
 
         private void OnDisable()
         {
-            WantsToLeave = false;
+            wantsToLeave = false;
+            isActive = false;
+            thoughtBubble.SetActive(false);
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            if (WantsToLeave)
+            if (wantsToLeave)
                 return;
 
+            if (!isActive)
+                return;
+            
             if(other.TryGetComponent(out Ingredient ingredient))
                 ReceiveIngredient(ingredient);
         }
@@ -40,6 +51,12 @@ namespace MonkeyBusiness.Gameplay.Humans
         public void SetMaterial(Material material)
         {
             meshRenderer.sharedMaterial = material;
+        }
+
+        public void SetIngredient(IngredientSO ingredient)
+        {
+            Ingredient = ingredient;
+            iconRenderer.sharedMaterial = ingredient.iconMaterial;
         }
 
         public void ReceiveIngredient(Ingredient ingredient)
@@ -59,26 +76,35 @@ namespace MonkeyBusiness.Gameplay.Humans
             {
                 FeedFailure(ingredient);
             }
+
+            isActive = false;
+            thoughtBubble.SetActive(false);
         }
 
 
         private void FeedSuccess(Ingredient ingredient)
         {
             onSuccess?.Invoke();
-            WantsToLeave = true;
+            wantsToLeave = true;
             FMODUnity.RuntimeManager.PlayOneShot("A_SFX_SoupFinish");
         }
 
+        public void Activate()
+        {
+            isActive = true;
+            thoughtBubble.SetActive(true);
+        }
+        
         private void FeedFailure(Ingredient ingredient)
         {
             onFailure?.Invoke();
-            WantsToLeave = true;
+            wantsToLeave = true;
         }
         
         private void NotDoneFailure(Ingredient ingredient)
         {
             onFailureNotDone?.Invoke();
-            WantsToLeave = true;
+            wantsToLeave = true;
         }
     }
 }

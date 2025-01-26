@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Onion
   m_EditorClassIdentifier: 
   prefab: {fileID: 7009228590322657455, guid: b1e92fc001d2dee45aa76cc51268105c, type: 3}
+  iconMaterial: {fileID: 2100000, guid: bfcf15ae923240d468f6acd93989ed50, type: 2}

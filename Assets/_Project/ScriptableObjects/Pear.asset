@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Pear
   m_EditorClassIdentifier: 
   prefab: {fileID: 7211084495241604009, guid: a9c0b8577ec42b647873fec77f206c26, type: 3}
+  iconMaterial: {fileID: 2100000, guid: 2a05ff68fa16d9a4d9c2d64df1438eb9, type: 2}

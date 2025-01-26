@@ -97,7 +97,7 @@ namespace MonkeyBusiness.Gameplay.Humans
                     slot = queuedHumans.Dequeue();
                     Vector3 targetPos = SpawnPosition(i);
                     slot.transform.DOMove(targetPos, 2);
-
+                    slot.Activate();
                     _refillTimer = queueMoveTime;
 
                     activeHumans[i] = slot;
@@ -149,7 +149,7 @@ namespace MonkeyBusiness.Gameplay.Humans
                 if (human == null)
                     continue;
                 
-                if (!human.WantsToLeave)
+                if (!human.wantsToLeave)
                     continue;
 
                 activeHumans[i] = null;
@@ -175,7 +175,7 @@ namespace MonkeyBusiness.Gameplay.Humans
         private void OnGetFromPool(HumanController pooledObject)
         {
             pooledObject.gameObject.SetActive(true);
-            pooledObject.Ingredient = IngredientList.Instance.GetRandom();
+            pooledObject.SetIngredient(IngredientList.Instance.GetRandom());
             pooledObject.SetMaterial(GetRandomMaterial());
         }
         

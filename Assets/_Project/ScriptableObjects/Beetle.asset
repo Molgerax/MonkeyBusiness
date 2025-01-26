@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Beetle
   m_EditorClassIdentifier: 
   prefab: {fileID: 4257689920448635686, guid: 7082f83b6aa884a4581067fe215be820, type: 3}
+  iconMaterial: {fileID: 2100000, guid: 84f30e858b22070408b0893e48a48251, type: 2}

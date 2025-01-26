@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Radish
   m_EditorClassIdentifier: 
   prefab: {fileID: 7625533328026182598, guid: 85cdbbe87ec1e87428ac5b7aebd46a4d, type: 3}
+  iconMaterial: {fileID: 2100000, guid: a7b7454786e96ca42a5cdbc907a3cab4, type: 2}
