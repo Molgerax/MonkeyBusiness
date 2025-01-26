@@ -81,8 +81,11 @@ namespace MonkeyBusiness.Gameplay.Humans
                 activeHumanCount++;
 
                 StudioGlobalParameterTrigger trigger = GetComponent<StudioGlobalParameterTrigger>();
-                if (trigger) 
+                if (trigger)
+                {
                     trigger.Value = activeHumanCount;
+                    trigger.TriggerParameters();
+                }
             }
         }
 
