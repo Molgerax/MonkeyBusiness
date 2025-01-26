@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4616081212540258897, guid: 1ccd80527cc5bd348950210961372173, type: 3}
       propertyPath: m_Name
-      value: IngredientBase Variant
+      value: Beetle
       objectReference: {fileID: 0}
     - target: {fileID: 7246235415064988212, guid: 1ccd80527cc5bd348950210961372173, type: 3}
       propertyPath: m_LocalScale.x
@@ -129,10 +129,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4911720870209483562, guid: 7c5bcd5b407836e4e8ace0aab03e32c4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3415d3ecb6bbe3949b12b91be82a4bc9, type: 2}
+    - target: {fileID: -1680398838776924319, guid: 7c5bcd5b407836e4e8ace0aab03e32c4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3415d3ecb6bbe3949b12b91be82a4bc9, type: 2}
     - target: {fileID: 919132149155446097, guid: 7c5bcd5b407836e4e8ace0aab03e32c4, type: 3}
       propertyPath: m_Name
       value: Beetle
       objectReference: {fileID: 0}
+    - target: {fileID: 974382079376799826, guid: 7c5bcd5b407836e4e8ace0aab03e32c4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3415d3ecb6bbe3949b12b91be82a4bc9, type: 2}
+    - target: {fileID: 4180572961218444185, guid: 7c5bcd5b407836e4e8ace0aab03e32c4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3415d3ecb6bbe3949b12b91be82a4bc9, type: 2}
+    - target: {fileID: 4497225517827106610, guid: 7c5bcd5b407836e4e8ace0aab03e32c4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3415d3ecb6bbe3949b12b91be82a4bc9, type: 2}
     - target: {fileID: 5866666021909216657, guid: 7c5bcd5b407836e4e8ace0aab03e32c4, type: 3}
       propertyPath: m_Controller
       value: 
@@ -141,6 +161,14 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6122836669866850452, guid: 7c5bcd5b407836e4e8ace0aab03e32c4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3415d3ecb6bbe3949b12b91be82a4bc9, type: 2}
+    - target: {fileID: 8426491457614969578, guid: 7c5bcd5b407836e4e8ace0aab03e32c4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3415d3ecb6bbe3949b12b91be82a4bc9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
